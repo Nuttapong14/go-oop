@@ -11,14 +11,11 @@ type (
 	}
 
 	Car struct {
-		Vehicle  // Inheritance
-		Seats int
-		Year int
+		Vehicle  
 	}
 
 	Bike struct {
-		Vehicle  // Inheritance
-		Type string
+		Vehicle  
 	}
 )
 
@@ -30,10 +27,10 @@ func (v Vehicle) Drive() {
 
 // Overriding Drive() for Car
 func (c Car) Drive() {
-	fmt.Println(c.Brand, "car is driving at", c.Speed, "km/h with", c.Seats, "seats year", c.Year)
+	fmt.Println(c.Brand, "car is driving at", c.Speed, "km/h")
 }
 
 // Overriding Drive() for Bike
 func (b Bike) Drive() {
-	fmt.Println(b.Brand, b.Type, "bike is driving at", b.Speed, "km/h")
+	fmt.Println(b.Brand, "bike is driving at", b.Speed, "km/h")
 }

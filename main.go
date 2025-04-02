@@ -47,7 +47,7 @@ func main() {
 			Brand: "Toyota",
 			Speed: 120,
 		},
-		Seats: 5,
+		
 	}
 
 	// Creating a Bike object
@@ -56,13 +56,11 @@ func main() {
 			Brand: "Yamaha",
 			Speed: 80,
 		},
-		Type: "Sport",
 	}
 
     print("\n")
 	// Calling Drive() method
     fmt.Println("Inheritance")
-	myCar.Drive()
-	myBike.Drive()
-
+	myCar.Drive() 
+	myBike.Drive() 
 }

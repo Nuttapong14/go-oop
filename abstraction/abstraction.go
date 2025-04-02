@@ -26,5 +26,5 @@ func (v Bike) Drive() {
 }
 
 func (v Car) Drive() {
-    fmt.Println("Car is driving : ", v.Seats, " Can seat : ", v.Year)
+    fmt.Println("Car form : ", v.Year, " Can seat : ", v.Seats)
 }
